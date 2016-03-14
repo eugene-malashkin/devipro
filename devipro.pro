@@ -4,17 +4,17 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
-
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+QT       += core gui widgets xml
 
 TARGET = devipro
 TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        widget.cpp
+        widget.cpp \
+    logic.cpp
 
-HEADERS  += widget.h
+HEADERS  += widget.h \
+    logic.h
 
 CONFIG += c++11 c++14
